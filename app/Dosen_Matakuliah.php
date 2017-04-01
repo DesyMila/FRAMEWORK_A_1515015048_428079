@@ -20,4 +20,7 @@ public function mahasiswa()
 {
 	return $this->belongsTo(Mahasiswa::class);
 }
+public function matakuliah(){
+	return $this->belongsTo(Matakuliah::class);
     }
+}
