@@ -11,14 +11,14 @@
 			<td>{{$pengguna->username}}</td>
 		</tr>
 		<tr>
-			<td>Password</td>
+			<td>Password </td>
 			<td>:</td>
-			<td>{{$pengguna->password</td>
-		</tr>
+			<td>{{$pengguna->password}}</td>
+		</tr>		
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$pengguna->create_at</td>
+			<td>{{$pengguna->create_at}}</td>
 		</tr>
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>

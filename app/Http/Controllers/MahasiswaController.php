@@ -23,6 +23,7 @@ public function tambah()
     $mahasiswa->nim =$input->nim;
 	$mahasiswa->alamat =$input->alamat;
 	$mahasiswa->pengguna_id =$input->pengguna_id;
+    $mahasiswa=Pengguna::find(1)->mahasiswa;
 	$informasi=$mahasiswa->save()?'berhasil simpan data':'gagal simpan data';
 	return redirect('mahasiswa')->with(['informasi'=>$informasi]);
 }

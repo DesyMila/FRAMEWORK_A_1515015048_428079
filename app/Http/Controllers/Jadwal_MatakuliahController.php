@@ -11,7 +11,7 @@ class Jadwal_MatakuliahController extends Controller
 {
     public function awal()
     {
-    return view('jadwal_matakuliah.awal',['data'=>jadwal_matakuliah::all()]);
+    return view('jadwal_matakuliah.awal',['data'=>Jadwal_Matakuliah::all()]);
     }
 public function tambah()
     {
@@ -20,20 +20,20 @@ public function tambah()
 
 
 public function simpan(){
-   $jadwal = new Jadwal_Jatakuliah();
-   $jadwal->mahasiswa_id = $input->mahasiswa_id;
-   $jadwal->ruangan_id =$input->ruangan_id;
-   $jadwal->dosen_matakuliah_id =$input->dosen_matakuliah_id;
-   $informasi=$jadwal->save()?'berhasil simpan data':'gagal simpan data';
+   $jadwal_matakuliah = new Jadwal_Matakuliah();
+   $jadwal_matakuliah->mahasiswa_id = $input->mahasiswa_id;
+   $jadwal_matakuliah->ruangan_id =$input->ruangan_id;
+   $jadwal_matakuliah->dosen_matakuliah_id =$input->dosen_matakuliah_id;
+   $informasi=$jadwal_matakuliah->save()?'berhasil simpan data':'gagal simpan data';
   return redirect('jadwal_matakuliah')->with(['informasi'=>$informasi]);
 }
 public function edit($id){
 $jadwal_matakuliah=Jadwal_Matakuliah::find($id);
-return view('jadwal_matakuliah.edit')->with(array('jadwal'=>$jadwal));
+return view('jadwal_matakuliah.edit')->with(array('jadwal_matakuliah'=>$jadwal_matakuliah));
 }
 public function lihat($id){
   $jadwal_matakuliah=Jadwal_Matakuliah::find($id);
-  return view('jadwal_matakuliah.lihat')->with(array('jadwal'=>$jadwal));
+  return view('jadwal_matakuliah.lihat')->with(array('jadwal_matakuliah'=>$jadwal_matakuliah));
 }
 public function update($id, Requests $input){
   $jadwal_matakuliah=Jadwal_Matakuliah::find($id);

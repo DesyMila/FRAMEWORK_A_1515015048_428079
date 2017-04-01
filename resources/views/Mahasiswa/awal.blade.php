@@ -27,11 +27,11 @@
 				<td>{{$mahasiswa->nama or 'nama kosong'}}</td>
 				<td>{{$mahasiswa->nim or 'nip Kosong'}}</td>
 				<td>{{$mahasiswa->alamat or 'alamat kosong'}}</td>
-				<td>$mahasiswa->pengguna_id or 'Pengguna id kosong'</td>
+				<td>{{$mahasiswa->pengguna_id or 'Pengguna id kosong'}}</td>
 				<div class="btn-group" role="group">
-					<a href="{{url('mahasiswa/edit/'.$mahasiswa->id}}" class="btn btn-warning btn-xs" data-toggle="tooltip" data-palement="top" title="ubah"><i class="fa fa-pencil"></i></a>
-					<a href="{{url(mahasiswa/lihat/'.$mahasiswa->id" class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="top" title="Lihat"><i class fa fa-eye></i></a>
-					<a href="{{url(mahasiswa/hapus/'.$mahasiswa->id" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Hapus"><i class fa fa-remote></i></a>
+					<a href="{{url('mahasiswa/edit/'.$mahasiswa->id)}}" class="btn btn-warning btn-xs" data-toggle="tooltip" data-palement="top" title="ubah"><i class="fa fa-pencil"></i></a>
+					<a href="{{url(mahasiswa/lihat/'.$mahasiswa->id)}}" class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="top" title="Lihat"><i class fa fa-eye></i></a>
+					<a href="{{url(mahasiswa/hapus/'.$mahasiswa->id)}}" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Hapus"><i class fa fa-remote></i></a>
 				</div>
 				</td>
 			</tr>

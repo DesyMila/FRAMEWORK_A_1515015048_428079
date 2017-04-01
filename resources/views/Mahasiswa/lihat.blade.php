@@ -13,23 +13,23 @@
 		<tr>
 			<td>NIM</td>
 			<td>:</td>
-			<td>{{$mahasiswa->nim</td>
+			<td>{{$mahasiswa->nim}}</td>
 		</tr>
 		<tr>
 			<td>Alamat</td>
 			<td>:</td>
-			<td>{{$mahasiswa->alamat</td>
+			<td>{{$mahasiswa->alamat}}</td>
 		</tr>
 		<tr>
 			<td> ID Pengguna</td>
 			<td>:</td>
-			<td>{{$mahasiswa->pengguna_id</td>
+			<td>{{$mahasiswa->pengguna_id}}</td>
 		</tr>
 		
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$mahasiswa->create_at</td>
+			<td>{{$mahasiswa->create_at}}</td>
 		</tr>
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>

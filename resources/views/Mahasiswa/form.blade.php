@@ -6,11 +6,11 @@
 </div>
 <div class="form-group">
 	<label class="col-sm-2 control-label">NIM</label>
-	<div class="col-sm-10">{!! Form::text('nim',['class'=>'form-control','placeholder'=>"NIM"])!!}</div>
+	<div class="col-sm-10">{!! Form::text('nim',null,['class'=>'form-control','placeholder'=>"NIM"])!!}</div>
 </div>
 <div class="form-group">
 	<label class="col-sm-2 control-label">Alamat</label>
-	<div class="col-sm-10">{!! Form::text('alamat',['class'=>'form-control','placeholder'=>"Alamat"])!!}</div>
+	<div class="col-sm-10">{!! Form::text('alamat',null,['class'=>'form-control','placeholder'=>"Alamat"])!!}</div>
 </div>
 <div class="form-group">
 	<label class="col-sm-2 control-label">Pengguna ID</label>

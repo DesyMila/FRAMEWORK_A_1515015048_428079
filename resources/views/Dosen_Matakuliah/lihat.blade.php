@@ -13,12 +13,12 @@
 		<tr>
 			<td>ID Dosen </td>
 			<td>:</td>
-			<td>{{$dosen_matakuliah->dosen_id</td>
+			<td>{{$dosen_matakuliah->dosen_id}}</td>
 		</tr>		
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$dosen_matakuliah->create_at</td>
+			<td>{{$dosen_matakuliah->create_at}}</td>
 		</tr>
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>

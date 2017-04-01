@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class dosen extends Model
 {
     protected $table = 'dosen';
-    protected $fillable = ['nama','nip','alamat','pengguna_id'];
+    protected $fillable= ['nama','nip','alamat','pengguna_id'];
+public function pengguna(){
+	return $this->belongTo(Pengguna::class);
+}
+public function dosen_matakuliah()
+{
+	return $this->hasMany(Dosen_matakuliah::class);
+}
 }

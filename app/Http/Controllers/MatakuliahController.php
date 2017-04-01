@@ -6,10 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Matakuliah;
+
 class MatakuliahController extends Controller
 {
    public function awal(){
-    return view('matakuliah.awal',['data'=>Matakuliah:all()]);
+    return view('matakuliah.awal',['data'=>Matakuliah::all()]);
 }
 public function tambah(){
 	return view('matakuliah.tambah');

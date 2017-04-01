@@ -1,9 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Pengguna;
 
@@ -17,11 +15,11 @@ public function tambah()
     {
         return view('pengguna.tambah');
     }
-    public function simpan(){
+    public function simpan(Requests $input){
     	$pengguna = new Pengguna();
     	$pengguna->username = $input->username;
     	$pengguna->password = $input->password;
-    	$informasi->$pengguna->save()?'data dengan telah disimpan':'gagal simpan data';
+    	$informasi=$pengguna->save()? 'data dengan telah disimpan' : 'gagal simpan data';
         return redirect('pengguna')->with(['informasi'=>$informasi]);
     }
     public function edit($id){

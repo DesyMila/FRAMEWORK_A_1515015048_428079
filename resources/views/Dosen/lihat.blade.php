@@ -13,23 +13,23 @@
 		<tr>
 			<td>NIP</td>
 			<td>:</td>
-			<td>{{$dosen->nip</td>
+			<td>{{$dosen->nip}}</td>
 		</tr>
 		<tr>
 			<td>Alamat</td>
 			<td>:</td>
-			<td>{{$dosen->alamat</td>
+			<td>{{$dosen->alamat}}</td>
 		</tr>
 		<tr>
 			<td> ID Pengguna</td>
 			<td>:</td>
-			<td>{{$dosen->pengguna_id</td>
+			<td>{{$dosen->pengguna_id}}</td>
 		</tr>
 		
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$dosen->create_at</td>
+			<td>{{$dosen->create_at}}</td>
 		</tr>
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>

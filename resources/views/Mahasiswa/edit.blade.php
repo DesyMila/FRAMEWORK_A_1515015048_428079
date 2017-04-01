@@ -4,7 +4,7 @@
 	<div class="panel-heading">
 		<strong><a href="{{url('mahasiswa')}}"><i class="fa text-default fa-chevron-left"></i></a>Perbarui Data Dosen</strong>
 	</div>
-	{!!Form::model($mahasiswa,['url'=>'mahasiswa/edit/'.$mahasiswa->'class'=>'form-horizontal'])!!}
+	{!!Form::model($mahasiswa,['url'=>'mahasiswa/edit/'.$mahasiswa->id,'class'=>'form-horizontal'])!!}
 	@include('mahasiswa.form')
 	<div style="width: 100%;text-align: center;">
 		<button class="btn btn-info"><i class="fa fa-save"></i>Perbarui</button>

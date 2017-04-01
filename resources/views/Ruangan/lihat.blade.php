@@ -13,7 +13,7 @@
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$ruangan->create_at</td>
+			<td>{{$ruangan->create_at}}</td>
 		</tr>
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>

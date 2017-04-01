@@ -24,10 +24,11 @@
 				<td>{{$x++}}</td>
 				<td>{{$pengguna->username or 'username kosong'}}</td>
 				<td>{{$pengguna->password or 'password Kosong'}}</td>
-				<td><div class="btn-group" role="group">
-					<a href="{{url('pengguna/edit/'.$pengguna->id}}" class="btn btn-warning btn-xs" data-toggle="tooltip" data-palement="top" title="ubah"><i class="fa fa-pencil"></i></a>
-					<a href="{{url(pengguna/lihat/'.$pengguna->id" class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="top" title="Lihat"><i class fa fa-eye></i></a>
-					<a href="{{url(pengguna/hapus/'.$pengguna->id" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Hapus"><i class fa fa-remote></i></a>
+				<td>
+				<div class="btn-group" role="group">
+					<a href="{{url('pengguna/edit/'.$pengguna->id)}}" class="btn btn-warning btn-xs" data-toggle="tooltip" data-palement="top" title="ubah"><i class="fa fa-pencil"></i></a>
+					<a href="{{url('pengguna/lihat/'.$pengguna->id)}}" class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="top" title="Lihat"><i class="fa fa-eye"></i></a>
+					<a href="{{url('pengguna/hapus/'.$pengguna->id)}}/" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Hapus"><i class="fa fa-remote"></i></a>
 				</div>
 				</td>
 			</tr>

@@ -23,9 +23,9 @@
 				<td>{{$x++}}</td>
 				<td>{{$ruangan->title or 'title kosong'}}</td>
 				<td><div class="btn-group" role="group">
-					<a href="{{url('ruangan/edit/'.$ruangan->id}}" class="btn btn-warning btn-xs" data-toggle="tooltip" data-palement="top" title="ubah"><i class="fa fa-pencil"></i></a>
-					<a href="{{url(ruangan/lihat/'.$ruangan->id" class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="top" title="Lihat"><i class fa fa-eye></i></a>
-					<a href="{{url(ruangan/hapus/'.$dosen_matakuliaha->id" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Hapus"><i class fa fa-remote></i></a>
+					<a href="{{url('ruangan/edit/'.$ruangan->id)}}" class="btn btn-warning btn-xs" data-toggle="tooltip" data-palement="top" title="ubah"><i class="fa fa-pencil"></i></a>
+					<a href="{{url('ruangan/lihat/'.$ruangan->id)}}" class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="top" title="Lihat"><i class="fa fa-eye"></i></a>
+					<a href="{{url('ruangan/hapus/'.$ruangan->id)}}" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Hapus"><i class="fa fa-remote"></i></a>
 				</div>
 				</td>
 			</tr>

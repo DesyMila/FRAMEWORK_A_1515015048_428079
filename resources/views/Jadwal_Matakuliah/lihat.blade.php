@@ -8,7 +8,7 @@
 		<tr>
 			<td>ID Mahasiswa</td>
 			<td>:</td>
-			<td>{{$adwal_matakuliah->mahasiswa_id}}</td>
+			<td>{{$jadwal_matakuliah->mahasiswa_id}}</td>
 		</tr>
 		<tr>
 			<td>ID Ruangan</td>
@@ -18,12 +18,12 @@
 		<tr>
 			<td>ID Dosen </td>
 			<td>:</td>
-			<td>{{$adwal_matakuliah->dosen_matakuliah_id</td>
+			<td>{{$adwal_matakuliah->dosen_matakuliah_id}}</td>
 		</tr>		
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$adwal_matakuliah->create_at</td>
+			<td>{{$adwal_matakuliah->create_at}}</td>
 		</tr>
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>

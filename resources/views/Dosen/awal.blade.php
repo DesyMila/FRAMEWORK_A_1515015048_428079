@@ -27,11 +27,12 @@
 				<td>{{$dosen->nama or 'nama kosong'}}</td>
 				<td>{{$dosen->nip or 'nip Kosong'}}</td>
 				<td>{{$dosen->alamat or 'alamat kosong'}}</td>
-				<td>$dosen->pengguna_id or 'Pengguna id kosong'</td>
+				<td>{{$dosen->pengguna_id or 'Pengguna id kosong'}}</td>
+				<td>
 				<div class="btn-group" role="group">
-					<a href="{{url('dosen/edit/'.$dosen->id}}" class="btn btn-warning btn-xs" data-toggle="tooltip" data-palement="top" title="ubah"><i class="fa fa-pencil"></i></a>
-					<a href="{{url(dosen/lihat/'.$dosen->id" class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="top" title="Lihat"><i class fa fa-eye></i></a>
-					<a href="{{url(dosen/hapus/'.$dosen->id" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Hapus"><i class fa fa-remote></i></a>
+					<a href="{{url('dosen/edit/'.$dosen->id)}}" class="btn btn-warning btn-xs" data-toggle="tooltip" data-palement="top" title="ubah"><i class="fa fa-pencil"></i></a>
+					<a href="{{url('dosen/lihat/'.$dosen->id)}}" class="btn btn-info btn-xs" data-toggle="tooltip" data-placement="top" title="Lihat"><i class="fa fa-eye"></i></a>
+					<a href="{{url('dosen/hapus/'.$dosen->id)}}" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" title="Hapus"><i class="fa fa-remote"></i></a>
 				</div>
 				</td>
 			</tr>

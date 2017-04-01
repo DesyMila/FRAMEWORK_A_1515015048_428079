@@ -1,9 +1,9 @@
 <div class="form-group">
-	<label class="col-sm-2 control-label">Nama</label>
+	<label class="col-sm-2 control-label">Title</label>
 	<div class="col-sm-10">
-		{!! Form::text('matakuliah_id',null,['class'=>'form-control','placeholder'=>"ID Matakuliah"])!!}
+		{!! Form::text('title',null,['class'=>'form-control','placeholder'=>"Title"]) !!}
 	</div>
 <div class="form-group">
-	<label class="col-sm-2 control-label">ID Dosen</label>
-	<div class="col-sm-10">{!! Form::text('dosen_id',['class'=>'form-control','placeholder'=>"ID Dosen"])!!}</div>
+	<label class="col-sm-2 control-label">Keterangan</label>
+	<div class="col-sm-10">{!! Form::text('keterangan',['class'=>'form-control','placeholder'=>"Keterangan"])!!}</div>
 </div>
