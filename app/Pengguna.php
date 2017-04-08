@@ -10,11 +10,11 @@ class Pengguna extends Model
    protected $fillable=['username','password']; 
 public function mahasiswa()
 {
-	return $this->hasOne(Mahasiswa::class);
+	return $this->hasOne(Mahasiswa::class,'mahasiswa_id');
 }
 public function dosen()
 {
-	return $this->hasOne(Dosen::class);
+	return $this->hasOne(Dosen::class,'dosen_id');
 }
 public function peran()
 {

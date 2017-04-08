@@ -23,11 +23,11 @@ public function tambah()
         return redirect('pengguna')->with(['informasi'=>$informasi]);
     }
     public function edit($id){
-        $pengguna=Pengguna::find($id);
+        $pengguna= Pengguna::find($id);
         return view('pengguna.edit')->with(array('pengguna'=>$pengguna));
     }
     public function lihat($id){
-        $pengguna=Pengguna::find($id);
+        $pengguna= Pengguna::find($id);
         return view('pengguna.lihat')->with(array('pengguna'=>$pengguna));
     }
     public function update($id, Request $input){

@@ -21,9 +21,14 @@
 			<td>{{$dosen->alamat}}</td>
 		</tr>
 		<tr>
-			<td> ID Pengguna</td>
+			<td> Username</td>
 			<td>:</td>
-			<td>{{$dosen->pengguna_id}}</td>
+			<td>{{$dosen->username}}</td>
+		</tr>
+		<tr>
+			<td> Password</td>
+			<td>:</td>
+			<td>{{$dosen->password}}</td>
 		</tr>
 		
 		<tr>

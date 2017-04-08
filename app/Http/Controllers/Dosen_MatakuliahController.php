@@ -5,22 +5,28 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Dosen_Matakuliah;
+use App\Dosen;
+use App\Matakuliah;
 class Dosen_MatakuliahController extends Controller
 {
+
+  protected $informasi="Gagal Melakukan Aksi";
     public function awal()
     {
-   	return view('dosen_matakuliah.awal',['data'=>Dosen_Matakuliah::all()]);
+        $semuaDosen_Matakuliah=Dosen_Matakuliah::all();
+   	return view('dosen_matakuliah.awal',compact('semuaDosen_Matakuliah'));
     }
 public function tambah()
     {
-    	return view('dosen_matakuliah.tambah');
+        $matakuliah= new Matakuliah;
+        $dosen= new Dosen;
+    	return view('dosen_matakuliah.tambah',compact('matakuliah','dosen'));
     }
   public function simpan(){
-    $dosen_matakuliah = new Dosen_Matakuliah();
-    $dosen_matakuliah->dosen_id=$input->dosen_id;
-	$dosen_matakuliah->matakuliah_id=$input->matakuliah_id;
+    $dosen_matakuliah = new Dosen_Matakuliah($input->only('dosen_id','matakuliah_id'));
+    if($dosen_matakuliah->save())$this->informasi="Jadwal Matakuliah Telah Berhasil Disimpan";
 	$informasi=$dosen_matakuliah->save()?'berhasil simpan data':'gagal simpan data';
-	return redirect('dosen_matakuliah')->with(['informasi'=>$informasi]);
+	return redirect('dosen_matakuliah')->with(['informasi'=>$this->informasi]);
 }
 public function edit($id){
 $dosen_matakuliah=Dosen_Matakuliah::find($id);

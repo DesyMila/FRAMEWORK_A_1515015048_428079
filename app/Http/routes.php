@@ -35,7 +35,7 @@ Route::get('pengguna/{pengguna}','PenggunaController@lihat');
 Route::post('pengguna/simpan','PenggunaController@simpan');
 Route::get('pengguna/edit/{pengguna}','PenggunaController@edit');
 Route::post('pengguna/edit/{pengguna}','PenggunaController@update');
-Route::get('pengguna/hapus/{pengguna}','PenggunaController@hapus');
+Route::get('pengguna/tambah','PenggunaController@tambah');
 
 Route::get('dosen','DosenController@awal');
 Route::get('dosen/{dosen}','DosenController@lihat');
@@ -70,7 +70,7 @@ Route::get('jadwal_matakuliah/{jadwal_matakuliah}','Jadwal_MatakuliahController@
 Route::post('jadwal_matakuliah/simpan','Jadwal_MatakuliahController@simpan');
 Route::get('jadwal_matakuliah/edit/{jadwal_matakuliah}','Jadwal_MatakuliahController@edit');
 Route::post('jadwal_matakuliah/edit/{jadwal_matakuliah}','Jadwal_MatakuliahController@update');
-Route::get('jadwal_matakuliah/hapus/{jadwal_matakuliah}','Jadwal_MatakuliahController@hapus');
+Route::get('jadwal_matakuliah/tambah','Jadwal_MatakuliahController@tambah');
 
 Route::get('ruangan','RuanganController@awal');
 Route::get('ruangan/{ruangan}','RuanganController@lihat');

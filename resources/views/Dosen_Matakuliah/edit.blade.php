@@ -1,30 +1,15 @@
 @extends('master')
 @section('container')
-<div class="panel panel-warning">
+<div class="panel panel-info">
 	<div class="panel-heading">
-		<strong><a href="{{url('dosen_matakuliah')}}"><i style="#8a6b3b" class="fa text=default fa-chevron-left"></i></a>Detail Data Dosen Matakuliah</strong>
+		<strong><a href="{{url('dosen_matakuliah')}}"><i class="fa text-default fa-chevron-left"></i></a>Perbarui Data Dosen </strong>
 	</div>
-	<table class="table">
-		<tr>
-			<td>ID Matakuliah</td>
-			<td>:</td>
-			<td>{{$dosen_matakuliah->matakuliah_id}}</td>
-		</tr>
-		<tr>
-			<td>ID dosen</td>
-			<td>:</td>
-			<td>{{$dosen_matakuliah->dosen_id}}</td>
-		</tr>
-		<tr>
-			<td class="col-xs-4">Dibuat tanggal</td>
-			<td class="col-xs-1">:</td>
-			<td>{{$dosen_matakuliah->create_at}}</td>
-		</tr>
-		<tr>
-			<td class="col-xs-4">Diperbarui Tanggal</td>
-			<td class="col-xs-1">:</td>
-			<td>{{$dosen_matakuliah->update_at}}</td>
-		</tr>
-	</table>
+	{!!Form::model($dosen_matakuliah,['url'=>'dosen_matakuliah/edit/'.$dosen_matakuliah->id,'class'=>'form-horizontal'])!!}
+	@include('dosen_matakuliah.form')
+	<div style="width: 100%;text-align: center;">
+		<button class="btn btn-info"><i class="fa fa-save"></i>Perbarui</button>
+		<button type="reset" class="btn btn-danger"><i class="fa fa-undo"></i>Ulangi</button>
+	</div>
+	{!! Form::close()!!}
 </div>
 @stop

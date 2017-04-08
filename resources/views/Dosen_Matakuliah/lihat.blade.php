@@ -6,14 +6,14 @@
 	</div>
 	<table class="table">
 		<tr>
-			<td>ID Matakuliah</td>
+			<td>Nama Matakuliah</td>
 			<td>:</td>
-			<td>{{$dosen_matakuliah->matakuliah_id}}</td>
+			<td>{{$dosen_matakuliah->matakuliah->nama}}</td>
 		</tr>
 		<tr>
-			<td>ID Dosen </td>
+			<td>Nama Dosen </td>
 			<td>:</td>
-			<td>{{$dosen_matakuliah->dosen_id}}</td>
+			<td>{{$dosen_matakuliah->dosen->nama}}</td>
 		</tr>		
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
