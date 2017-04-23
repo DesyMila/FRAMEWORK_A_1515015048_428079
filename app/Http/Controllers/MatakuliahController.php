@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Matakuliah;
-
+use App\Http\Requests\MatakuliahRequest;
 class MatakuliahController extends Controller
 {
    public function awal(){
@@ -15,7 +15,7 @@ class MatakuliahController extends Controller
 public function tambah(){
 	return view('matakuliah.tambah');
 }
-public function simpan(Requests $input)
+public function simpan(MatakuliahRequest $input)
 {
 	$matakuliah = new Matakuliah();
 	$matakuliah->title =$input->title;
@@ -31,7 +31,7 @@ public function lihat($id){
 	$matakuliah=Matakuliah::find($id);
 	return view('matakuliah.lihat')->with(array('matakuliah'=>$matakuliah));
 }
-public function update($id, Requests $input){
+public function update($id, MatakuliahRequest $input){
 	$matakuliah=Matakuliah::find($id);
 	$matakuliah->title =$input->title;
 	$matakuliah->keterangan =$input->keterangan;

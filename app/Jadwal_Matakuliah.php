@@ -20,20 +20,7 @@ class Jadwal_Matakuliah extends Model
  	{
  		return $this->belongsTo(Mahasiswa::class,'mahasiswa_id');
  	}
- 	public function listMahasiswaDanNim(){
- 		$out=[];
- 		foreach ($this->all() as $mhs) {
- 			$out[$mhs->id]="{$mhs->nama} ({$mhs->nim})";
 
- 		}
- 		return $out;
  	}
- 	public function listDosenDanMatakukiah()
- 	{
- 		$out = [];
- 		foreach ($this->all() as $dsnMtk) {
- 			$out[$dsnMtk->id]="{$dsnMtk->dosen->nama} (Matakuliah {$dsnMtk->matakuliah->title})";
- 		}
- 		return $out;
- 	}
-}
+
+

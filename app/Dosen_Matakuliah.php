@@ -34,8 +34,8 @@ public function ListMahasiswaDanNim()
 public function ListDosenDanMatakuliah()
 {
 	$out=[];
-	foreach ($this as $dsnMtk) {
-		$out[$dsnMtk->id]="{$dsnMtk->dosen->nama} ({matakuliah->title})";
+	foreach ($this->all() as $dsnMtk) {
+		$out[$dsnMtk->id]="{$dsnMtk->dosen->nama} (Matakuliah {$dsnMtk->matakuliah->title})";
 	}
 	return $out;
 }

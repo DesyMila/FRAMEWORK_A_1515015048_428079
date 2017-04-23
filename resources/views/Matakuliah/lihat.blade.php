@@ -13,17 +13,17 @@
 		<tr>
 			<td>Keterangan </td>
 			<td>:</td>
-			<td>{{$matakuliah->ketengan}}</td>
+			<td>{{$matakuliah->keterangan}}</td>
 		</tr>		
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal}}</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$dosen_matakuliah->create_at}}</td>
+			<td>{{$matakuliah->created_at}}</td>
 		</tr>
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$dosen->update_at}}</td>
+			<td>{{$matakuliah->updated_at}}</td>
 		</tr>
 	</table>
 </div>

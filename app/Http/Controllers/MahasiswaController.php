@@ -1,12 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Mahasiswa;
 use App\Pengguna;
-
+use App\Http\Requests\MahasiswaRequest;
 class MahasiswaController extends Controller
 {
 protected $informasi='Gagal melakukan aksi';
@@ -19,7 +18,7 @@ public function tambah()
     {
     	return view('mahasiswa.tambah');
     }
-  public function simpan(Requests $input){
+  public function simpan(MahasiswaRequest $input){
     $pengguna = new Pengguna($input->only('username','password'));
     if ($pengguna->save()) {
         $mahasiswa= new Mahasiswa();
@@ -38,7 +37,7 @@ public function lihat($id){
 	$mahasiswa= Mahasiswa::find($id);
 	return view('mahasiswa.lihat')->with(array('mahasiswa'=>$mahasiswa));
 }
-public function update($id, Requests $input){
+public function update($id, MahasiswaRequest $input){
 	$mahasiswa=Mahasiswa::find($id);
     $pengguna=$mahasiswa->pengguna;
     $mahasiswa->nama=$input->nama;

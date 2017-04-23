@@ -9,7 +9,7 @@ class dosen extends Model
     protected $table = 'dosen';
     protected $fillable= ['nama','nip','alamat','pengguna_id'];
 public function pengguna(){
-	return $this->belongTo(Pengguna::class,'pengguna_id');
+	return $this->belongsTo(Pengguna::class,'pengguna_id');
 }
 public function dosen_matakuliah()
 {

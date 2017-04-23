@@ -18,7 +18,7 @@
 		<tr>
 			<td>Nama Dosen </td>
 			<td>:</td>
-			<td>{{$adwal_matakuliah->dosen_matakuliah->dosen->nip}}</td>
+			<td>{{$jadwal_matakuliah->dosen_matakuliah->dosen->nip}}</td>
 		</tr>
 		<tr>
 			<td>Nama Matakuliah</td>
@@ -28,12 +28,12 @@
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$adwal_matakuliah->create_at}}</td>
+			<td>{{$jadwal_matakuliah->created_at}}</td>
 		</tr>
 		<tr>
 			<td class="col-xs-4">Diperbarui Tanggal</td>
 			<td class="col-xs-1">:</td>
-			<td>{{$adwal_matakuliah->update_at}}</td>
+			<td>{{$jadwal_matakuliah->updated_at}}</td>
 		</tr>
 	</table>
 </div>
